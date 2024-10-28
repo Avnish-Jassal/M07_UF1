@@ -1,0 +1,8 @@
+numeros = list(map(int, input("Introdueix 10 números separats per espais: ").split()))
+suma_total = sum(numeros)
+mitjana = suma_total / len(numeros)
+numeros.extend([suma_total, mitjana])
+print("Números de l'usuari:", numeros[:10])
+print("Suma total:", suma_total)
+print("Mitjana:", mitjana)
+print("Llista final:", numeros)

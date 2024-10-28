@@ -1,0 +1,5 @@
+frase = input("Introdueix una frase: ")
+tupla_sense_espais = tuple(frase.replace(" ", ""))
+sense_repetits = "".join(dict.fromkeys(tupla_sense_espais)) 
+print("Tupla sense espais:", tupla_sense_espais)
+print("Frase sense caràcters repetits:", sense_repetits)
